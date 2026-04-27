@@ -1,4 +1,4 @@
-[23bcs114@mepcolinux EX-7]$cat p1.c
+[23bcs117@mepcolinux EX-7]$cat p1.c
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -106,7 +106,7 @@ int main()
 
     return 0;
 }
-[23bcs114@mepcolinux EX-7]$./p1
+[23bcs117@mepcolinux EX-7]$./p1
 *** Spell Checker Using Pthread Synchronization ***
 Enter number of words to check: 3
 Enter words one by one:
@@ -116,7 +116,7 @@ complier
 complier -> Incorrect
 ngnix
 ngnix -> Incorrect
-[23bcs114@mepcolinux EX-7]$cat p2.c
+[23bcs117@mepcolinux EX-7]$cat p2.c
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
@@ -218,7 +218,7 @@ int main() {
 
     return 0;
 }
-[23bcs114@mepcolinux EX-7]$./p2
+[23bcs117@mepcolinux EX-7]$./p2
 **** Printer Submit Queue using Pthread Semaphore ****
 Enter the MAX capacity of the submission queue: 3
 
