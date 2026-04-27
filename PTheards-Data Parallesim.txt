@@ -1,4 +1,4 @@
-[23bcs114@mepcolinux EX-5]$cat hellopt.c
+[23bcs117@mepcolinux EX-5]$cat hellopt.c
 #include<stdio.h>
 #include<stdlib.h>
 #include<pthread.h>
@@ -22,14 +22,14 @@ void* Hello(void* rank){
    long my_rank = long(rank);
    printf("Hello from Thread %d of %d.\n",my_rank,thread_count);
 }
-[23bcs114@mepcolinux EX-5]$./p1 5
+[23bcs117@mepcolinux EX-5]$./p1 5
 Hello from Thread 0 of 5.
 Hello from Thread 2 of 5.
 Hello from Thread 1 of 5.
 Hello from Thread 3 of 5.
 Hello from main Thread.
 Hello from Thread 4 of 5.
-[23bcs114@mepcolinux EX-5]$cat matop.c
+[23bcs117@mepcolinux EX-5]$cat matop.c
 #include <stdio.h>
 #include <pthread.h>
 
@@ -96,7 +96,7 @@ int main() {
     return 0;
 }
 
-[23bcs114@mepcolinux EX-5]$./p2
+[23bcs117@mepcolinux EX-5]$./p2
 Enter rows and columns: 3 3
 Enter Matrix A:
 1 2 3
@@ -116,7 +116,7 @@ Multiplication Result:
 30 24 18
 84 69 54
 138 114 90
-[23bcs114@mepcolinux EX-5]$cat sum_arr.c
+[23bcs117@mepcolinux EX-5]$cat sum_arr.c
 #include<stdio.h>
 #include<stdlib.h>
 #include<pthread.h>
@@ -158,7 +158,7 @@ int main(){
    }
    printf("Total Sum is %d\n",total_sum);
 }
-[23bcs114@mepcolinux EX-5]$./p3
+[23bcs117@mepcolinux EX-5]$./p3
 Enter number of elements: 10
 Enter Array Elements:1 2 3 4 5 6 7 8 9 10
 Enter Number of threads: 5
@@ -168,7 +168,7 @@ Partial sum of Thread 2 : 11
 Partial sum of Thread 3 : 15
 Partial sum of Thread 4 : 19
 Total Sum is 55
-[23bcs114@mepcolinux EX-5]$./p3
+[23bcs117@mepcolinux EX-5]$./p3
 Enter number of elements: 10
 Enter Array Elements:1 2 3 4 5 6 7 8 9 10
 Enter Number of threads: 6
