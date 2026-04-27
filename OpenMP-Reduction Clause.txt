@@ -1,4 +1,4 @@
-[23bcs114@mepcolinux EX-9]$cat p1.c
+[23bcs117@mepcolinux EX-9]$cat p1.c
 #include <stdio.h>
 #include <stdlib.h>
 #include <omp.h>
@@ -41,7 +41,7 @@ int main() {
     printf("\nApproximate integral = %lf\n", integral);
     return 0;
 }
-[23bcs114@mepcolinux EX-9]$./p1
+[23bcs117@mepcolinux EX-9]$./p1
 ===== Trapizoidal Rule using Parallel For and Reduction clause =====
 Enter lower limit (a): 12
 Enter upper limit (b): 34
@@ -49,7 +49,7 @@ Enter number of trapezoids (n): 4
 
 Using reduction:
 Approximate integral = 12636.250000
-[23bcs114@mepcolinux EX-9]$cat p2.c
+[23bcs117@mepcolinux EX-9]$cat p2.c
 #include<stdio.h>
 #include<stdlib.h>
 #include<omp.h>
@@ -81,7 +81,7 @@ if(arr[i][j]%k==0)
   }
   printf("Sum of Elements divisible by %d is %d.\n",k,sum);
 }
-[23bcs114@mepcolinux EX-9]$./p2
+[23bcs117@mepcolinux EX-9]$./p2
 ======== Sum of Elements divisible by K using Reduction Clause ========
 Enter Rows & Columns:4
 Enter Elements:
@@ -91,7 +91,7 @@ Enter Elements:
 5 4 2 3
 Enter Key:2
 Sum of Elements divisible by 2 is 20.
-[23bcs114@mepcolinux EX-9]$cat p3.c
+[23bcs117@mepcolinux EX-9]$cat p3.c
 #include <stdio.h>
 #include <omp.h>
 
@@ -155,7 +155,7 @@ int main() {
     }
     return 0;
 }
-[23bcs114@mepcolinux EX-9]$./p3
+[23bcs117@mepcolinux EX-9]$./p3
 ===== Saddle Point of Matrix using Parallel For and Reduction Clause =====
 Enter Row & Columns: 3
 Enter Elements:
