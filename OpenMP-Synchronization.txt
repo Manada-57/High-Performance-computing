@@ -1,4 +1,4 @@
-[23bcs114@mepcolinux EX-10]$cat p1.c
+[23bcs117@mepcolinux EX-10]$cat p1.c
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -143,10 +143,10 @@ int main()
     omp_destroy_lock(&lock);
     return 0;
 }
-[23bcs114@mepcolinux EX-10]$cat file1.txt
+[23bcs117@mepcolinux EX-10]$cat file1.txt
 Hello, I am Rohit
 This is to test EX-10
-[23bcs114@mepcolinux EX-10]$./p1
+[23bcs117@mepcolinux EX-10]$./p1
 ==== Producer & Consumer to Tokenize  ====
 Producer 0 produced: Hello, I am Rohit
 Producer 1 produced: Hello, World!
@@ -165,7 +165,7 @@ Consumer 0: EX-10
 Consumer 1: Thankyou
 Consumer 0 exiting
 Consumer 1 exiting
-[23bcs114@mepcolinux EX-10]$cat p2.c
+[23bcs117@mepcolinux EX-10]$cat p2.c
 #include <stdio.h>
 #include <stdlib.h>
 #include <omp.h>
@@ -316,7 +316,7 @@ int main()
     omp_destroy_lock(&lock);
     return 0;
 }
-[23bcs114@mepcolinux EX-10]$./p2
+[23bcs117@mepcolinux EX-10]$./p2
 ==== Producer & Consumer to find Mean and Variance ====
 Producer 0 produced: 0
 Consumer 0 consumed: 0
