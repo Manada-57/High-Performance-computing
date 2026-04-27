@@ -1,4 +1,4 @@
-[23bcs114@mepcolinux EX-1]$cat sr.c
+[23bcs117@mepcolinux EX-1]$cat sr.c
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -84,7 +84,7 @@ int main() {
     free(res);
     return 0;
 }
-[23bcs114@mepcolinux EX-1]$./sr
+[23bcs117@mepcolinux EX-1]$./sr
 Enter number of rows of matrix 1 (m): 5
 Enter number of columns of matrix 1 / rows of matrix 2 (n): 5
 Enter number of columns of matrix 2 (p): 5
@@ -113,7 +113,7 @@ Result Matrix for Serial:
 216 82 78 169 127
 
 Serial Execution Time: 0.000002 seconds
-[23bcs114@mepcolinux EX-1]$./sr
+[23bcs117@mepcolinux EX-1]$./sr
 Enter number of rows of matrix 1 (m): 50
 Enter number of columns of matrix 1 / rows of matrix 2 (n): 50
 Enter number of columns of matrix 2 (p): 50
@@ -123,7 +123,7 @@ Matrix 1 (Randomly Generated):
 Matrix 2 (Randomly Generated):
 
 Serial Execution Time: 0.001800 seconds
-[23bcs114@mepcolinux EX-1]$./sr
+[23bcs117@mepcolinux EX-1]$./sr
 Enter number of rows of matrix 1 (m): 100
 Enter number of columns of matrix 1 / rows of matrix 2 (n): 100
 Enter number of columns of matrix 2 (p): 100
@@ -133,7 +133,7 @@ Matrix 1 (Randomly Generated):
 Matrix 2 (Randomly Generated):
 
 Serial Execution Time: 0.014220 seconds
-[23bcs114@mepcolinux EX-1]$cat pr.c
+[23bcs117@mepcolinux EX-1]$cat pr.c
 #define _XOPEN_SOURCE 700
 #include <stdio.h>
 #include <stdlib.h>
@@ -238,7 +238,7 @@ for (int i = 0; i < m; i++) {
     shmdt(shm);
     return 0;
 }
-[23bcs114@mepcolinux EX-1]$./pr
+[23bcs117@mepcolinux EX-1]$./pr
 Enter number of rows of matrix 1 (m): 5
 Enter number of columns of matrix 1 / rows of matrix 2 (n): 5
 Enter number of columns of matrix 2 (p): 5
@@ -263,7 +263,7 @@ Result Matrix for parallel:
 216 82 78 169 127
 
 Parallel Execution Time: 0.000006 seconds
-[23bcs114@mepcolinux EX-1]$./pr
+[23bcs117@mepcolinux EX-1]$./pr
 Enter number of rows of matrix 1 (m): 10
 Enter number of columns of matrix 1 / rows of matrix 2 (n): 10
 Enter number of columns of matrix 2 (p): 10
@@ -303,7 +303,7 @@ Result Matrix for parallel:
 305 268 239 312 263 245 183 175 396 294
 
 Parallel Execution Time: 0.000007 seconds
-[23bcs114@mepcolinux EX-1]$./pr
+[23bcs117@mepcolinux EX-1]$./pr
 Enter number of rows of matrix 1 (m): 50
 Enter number of columns of matrix 1 / rows of matrix 2 (n): 50
 Enter number of columns of matrix 2 (p): 50
